@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Video Game</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="header__logo">
+        <img src="./img/logo.jpg" alt="logo" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#world">The World</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#footer">Support</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          <p class="dropdown-title">Home</p>
+          <i class="fa-sharp fa-solid fa-angle-down dropdown-icon"></i>
+        </button>
+
+        <div class="dropdown-menu">
+          <a href="#hero">Home</a>
+          <a href="#story">Story</a>
+          <a href="#world">The World</a>
+          <a href="#characters">Characters</a>
+          <a href="#footer">Support</a>
+        </div>
+      </div>
+      <div class="nav-btn__container">
+        <button class="nav-btn nav-btn--1">Log in</button>
+        <button class="nav-btn nav-btn--2">Register</button>
+      </div>
+    </header>
+    <div class="hamburger__icon"><i class="fa-solid fa-bars"></i></div>
+    <div class="close__icon"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+    <!--  END OF HEADER  -->
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="hero__block">
+        <div class="hero__small-video">
+          <video autoplay muted loop src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+          <h1 class="hero__video--title">Death and Beyond</h1>
+          <button class="hero__video--btn btn">Play Now</button>
+        </div>
+      </div>
+      <div class="hero__background">
+        <video autoplay muted loop src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+      </div>
+    </section>
+    <!--   END OF HERO SECTION -->
+
+    <!-- STORY SECTION -->
+    <section id="story">
+      <div class="story__fade"></div>
+      <div class="story__background1">
+        <div class="story__info">
+          <fieldset>
+            <legend>
+              <h2 class="story__heading"><span>The</span> Story</h2>
+            </legend>
+            <p class="story__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad alias recusandae saepe
+              velit, fugiat dignissimos sed distinctio! Unde atque totam nam, vero dolorum rem
+              quidem, obcaecati tempora sint dolorem a id ab nihil. Molestiae molestias odit
+              sapiente quas cum sit blanditiis dolore! Dolorum necessitatibus, laborum laboriosam
+              accusantium quisquam quas unde beatae provident itaque quaerat vel neque corrupti
+              obcaecati veritatis earum? Unde atque totam nam, vero dolorum rem quidem, obcaecati
+              tempora sint dolorem a id ab nihil. Molestiae molestias odit sapiente quas cum sit
+              blanditiis dolore! Dolorum necessitatibus, laborum laboriosam accusantium quisquam
+              quas unde beatae provident itaque quaerat vel neque corrupti obcaecati veritatis
+              earum? laborum laboriosam accusantium quisquam quas unde beatae provident.
+            </p>
+          </fieldset>
+        </div>
+        <div class="story__more-info story__more-info--next">
+          <p>More Info</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <div class="story__background2">
+        <p class="story__paragraph2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic facilis est quasi,
+          alias fuga natus, vel magnam accusamus quisquam laboriosam tempora suscipit voluptatibus
+          aliquid id repudiandae fugit ullam! Quidem voluptate quibusdam et natus praesentium iste
+          tempora corrupti obcaecati quaerat nemo fugit quisquam esse cum incidunt, sint corporis
+          non dignissimos, quas quis dolores eligendi, exercitationem ut itaque facilis. Voluptatum
+          hic ea recusandae quis molestiae architecto repellat veritatis quas voluptatem minima,
+          mollitia reprehenderit distinctio pariatur repellendus ipsa consequatur voluptates
+          impedit, explicabo enim obcaecati eos, numquam cum laudantium ut. Rem iure veniam porro
+          quae necessitatibus, quos dolorum quia, odit voluptas consectetur recusandae.
+        </p>
+        <div class="story__more-info story__more-info--back">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p>Back</p>
+        </div>
+      </div>
+    </section>
+    <!--    END OF STORY SECTION -->
+
+    <!--  WORLD SECTION -->
+    <section id="world">
+      <div class="world__text-container">
+        <p class="world__text"><span class="world__explore">Explore</span>the world of Ishya</p>
+      </div>
+      <div class="world__background world-bg">
+        <div class="world__image-animation">
+          <div class="world__img world__img--1">
+            <img src="./img/worldimg-one.jpg" alt="story background no.1" />
+            <i class="fa-sharp fa-solid fa-xmark close__img close__img--1"></i>
+          </div>
+
+          <div class="world__img world__img--2">
+            <img src="./img/worldimg-two.jpg" alt="story background no.2" />
+            <i class="fa-sharp fa-solid fa-xmark close__img close__img--2"></i>
+          </div>
+        </div>
+      </div>
+      <div class="world__background--2 world-bg"></div>
+      <div class="world__background--3 world-bg"></div>
+      <div class="world__background--4 world-bg"></div>
+      <div class="world__background--5 world-bg"></div>
+    </section>
+    <!--  END OF WORLD SECTION   -->
+
+    <!-- CHARACTERS SECTION  -->
+    <section id="characters">
+      <div class="characters__section">
+        <h2 class="characters__heading">Playable<br /><span>Characters</span></h2>
+
+        <ul class="characters__grid">
+          <li class="diamond--1">
+            <img src="./img/character-one.jpg" alt="mayhem character" />
+            <p class="characters__name name--1">Mayhem</p>
+          </li>
+
+          <li class="diamond--2">
+            <img src="./img/character-two.jpg" alt="zin the merchant character" />
+            <p class="characters__name name--2">Zin the Merchant</p>
+          </li>
+
+          <li class="diamond--3">
+            <img src="./img/character-three.jpg" alt="grosholl character" />
+            <p class="characters__name name--3">Grosholl</p>
+          </li>
+
+          <li class="diamond--4">
+            <img src="./img/character-four.jpg" alt="raven character" />
+            <p class="characters__name name--4">Raven</p>
+          </li>
+
+          <li class="diamond--5">
+            <img src="./img/character-five.jpg" alt="professor smith character" />
+            <p class="characters__name name--5">Professor Smith</p>
+          </li>
+
+          <li class="diamond--6">
+            <img src="./img/character-six.jpg" alt="atheun character" />
+            <p class="characters__name name--6">Atheun</p>
+          </li>
+
+          <li class="diamond--7">
+            <img src="./img/character-seven.jpg" alt="alex character" />
+            <p class="characters__name name--7">Alex</p>
+          </li>
+
+          <li class="diamond--8">
+            <img src="./img/character-eight.jpg" alt="grikky character" />
+            <p class="characters__name name--8">Grikky</p>
+          </li>
+
+          <li class="diamond--9">
+            <img src="./img/character-nine.jpg" alt="jack character" />
+            <p class="characters__name name--9">Jack</p>
+          </li>
+
+          <li class="diamond--10">
+            <img src="./img/character-ten.jpg" alt="zoth character" />
+            <p class="characters__name name--10">Zoth</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--       END OF CHARACTERS SECTION -->
+    <!--     FOOTER     -->
+    <section id="footer">
+      <ul class="footer__main-info">
+        <li>Careers</li>
+        <div class="divider"></div>
+        <li>Abous Us</li>
+        <div class="divider"></div>
+        <li>Merchandise</li>
+        <div class="divider"></div>
+        <li>Contact</li>
+      </ul>
+
+      <p class="footer__copyright">
+        ©2022 DeathandBeyond. All rights reserved. All trademarks are the property of their
+        respective owners.
+      </p>
+      <div class="footer__social">
+        <p>Follow us on :</p>
+        <a href="https://www.twitch.tv/" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+        <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+    </section>
+    <!--       END OF FOOTER -->
+    <script src="https://kit.fontawesome.com/07c7b4ecae.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
