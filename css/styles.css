@@ -162,8 +162,9 @@ video {
 }
 
 .hero__video--title {
-  font-size: 7rem;
+  font-size: 5rem;
   letter-spacing: 1px;
+  top: 15%;
   font-family: "Berkshire Swash", sans-serif;
   width: 100%;
   text-align: center;
