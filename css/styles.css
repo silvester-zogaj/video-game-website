@@ -896,6 +896,7 @@ video {
 
 @media only screen and (max-width: 750px) {
   #header {
+    min-width: 30rem;
     display: none;
   }
 
@@ -994,7 +995,7 @@ video {
   .hero__video--btn {
     transform: translate(-50%, -50%) scale(0.85);
     border: 1px solid white;
-    background-color: black
+    background-color: black;
     color: white;
     box-shadow: none;
     transition: none;
