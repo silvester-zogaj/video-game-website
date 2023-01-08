@@ -53,7 +53,7 @@ function toggleOpacity() {
     dropdownMenu.style.transform = "translateY(0)";
     dropdownMenu.style.opacity = "1";
     dropdownMenu.style.visibility = "visible";
-    dropdownIcon.style.color = "var(--secondary-color3)";
+    dropdownIcon.style.color = "var(--color-secondary-2)";
     isVisible = false;
   } else {
     dropdownMenu.style.transform = "translateY(-10%)";
@@ -118,6 +118,8 @@ document.addEventListener("click", function (e) {
 });
 
 // MOBILE SCREEN -- DROP-DOWN BUTTON TEXT CHANGE
+
+// No longer being used, but keeping it as a possible future idea.
 
 // for (let i=0; i < dropdownLinks.length; i++) {
 //   dropdownLinks[i].addEventListener('click', function () {

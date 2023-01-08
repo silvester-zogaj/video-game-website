@@ -8,6 +8,7 @@ GLOBAL STYLES
 :root {
   --color-primary-1: #000;
   --color-primary-2: #fff;
+  --color-primary-3: #e3dcdc;
 
   --color-secondary-1: #360403;
   --color-secondary-2: #9c0c08;
@@ -53,6 +54,7 @@ video {
 =====================*/
 #header {
   width: 100%;
+  min-width: 70rem;
   padding: 2rem;
   background-color: var(--color-primary-1);
   color: white;
@@ -75,14 +77,15 @@ video {
 }
 
 .header__logo {
-  width: 5rem;
   height: 5rem;
+  width: 10%;
+  min-width: 5rem;
 }
 
 .header__logo img {
   object-fit: cover;
   height: 100%;
-  width: 100%;
+  width: 5rem;
 }
 
 .navbar {
@@ -175,17 +178,17 @@ video {
 .hero__video--btn {
   font-size: 1.7rem;
   top: 80%;
-  height: 4.5rem;
+  height: 4.8rem;
   width: 14rem;
   border-radius: 1rem;
-  background-color: white;
+  background-color: var(--color-primary-3);
   color: black;
   border: 2px solid black;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
-  transition: background-color 0.1s linear, border 0.1s linear, color 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .hero__video--btn:hover {
@@ -193,6 +196,8 @@ video {
   border: 1px solid var(--color-secondary-2);
   color: var(--color-secondary-2);
   box-shadow: 0 0 20px -2px;
+  height: 6rem;
+  width: 15.5rem;
 }
 
 .hero__small-video {
@@ -209,6 +214,7 @@ video {
   z-index: -1;
   transform: scale(1.1);
   filter: blur(1.4rem);
+  background-color: var(--color-secondary-1);
 }
 
 .hero__background::after {
@@ -989,19 +995,22 @@ video {
     transform: translate(-50%, -50%) scale(1.2);
     border: 1px solid white;
     background-color: black;
-    color: var(--color-secondary-2);
+    color: white;
     box-shadow: none;
     transition: none;
-    /* box-shadow: 0 0px 15px 0 var(--color-secondary-2); */
+    font-weight: 400;
   }
 
   .hero__video--btn:hover {
     box-shadow: none;
+    color: white;
     border: 1px solid white;
+    height: 4.8rem;
+    width: 14rem;
   }
 
   .hero__small-video {
-    box-shadow: 0 0px 55px 2px var(--color-secondary-2);
+    box-shadow: 0 0 55px 2px var(--color-secondary-2);
   }
 
   #story {
