@@ -496,7 +496,7 @@ video {
   font-size: 2.5rem;
   position: relative;
   text-transform: uppercase;
-  color: white;
+  color: red;
   text-align: center;
 }
 
@@ -529,8 +529,7 @@ video {
   overflow: hidden;
   border: 1.5px solid var(--color-primary-2);
   cursor: pointer;
-  transition: transform 0.2s, z-index 0.2s;
-  z-index: 0;
+  transition: transform 0.3s, z-index 0.2s;
 }
 .characters__grid li:hover {
   transform: rotate(45deg) scale(1.5);
@@ -541,7 +540,7 @@ video {
 .characters__grid li:hover .characters__name {
   top: 50%;
   left: 90%;
-  transition: all 0.25s;
+  transition: all 0.3s;
 }
 
 .characters__grid li img {
