@@ -398,9 +398,12 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../img/worldbg-one.jpg");
+  background-image: url("../img/worldbg-one.jpg"), url("../img/worldbg-two.jpg"),
+    url("../img/worldbg-three.jpg"), url("../img/worldbg-four.jpg"), url("../img/worldbg-five.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  animation: change 40s infinite ease-in-out;
+  -moz-animation: change 35s infinite ease-in-out;
+  animation: change 35s infinite ease-in-out;
   animation-delay: 3s;
 }
 
