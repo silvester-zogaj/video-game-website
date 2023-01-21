@@ -403,6 +403,8 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
   -moz-animation: change 35s infinite ease-in-out;
+  -moz-animation-delay: 3s;
+  -moz-animation-duration: 35s;
   animation: change 35s infinite ease-in-out;
   animation-delay: 3s;
 }
