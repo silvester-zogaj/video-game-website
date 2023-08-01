@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 /* ================
 GLOBAL STYLES 
@@ -25,17 +25,17 @@ GLOBAL STYLES
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 2rem;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   overflow-x: hidden;
-  width: 1686px;
 }
 
 button {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -54,7 +54,6 @@ video {
 =====================*/
 #header {
   width: 100%;
-  min-width: 70rem;
   padding: 2rem;
   background-color: var(--color-primary-1);
   color: white;
@@ -151,6 +150,7 @@ video {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 }
 
@@ -168,11 +168,12 @@ video {
   font-size: 5rem;
   letter-spacing: 1px;
   top: 15%;
-  font-family: "Berkshire Swash", sans-serif;
+  font-family: 'Berkshire Swash', sans-serif;
   width: 100%;
   text-align: center;
   color: black;
-  text-shadow: 0px 0px 10px var(--color-secondary-2);
+  text-shadow: 0px 0px 10px
+    var(--color-secondary-2);
 }
 
 .hero__video--btn {
@@ -208,16 +209,16 @@ video {
 
 .hero__background {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: -1;
-  transform: scale(1.1);
   filter: blur(1.4rem);
+  transform: scale(1.1);
   background-color: var(--color-secondary-1);
 }
 
 .hero__background::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -230,13 +231,13 @@ video {
 =========================*/
 
 #story {
-  width: 100vw;
   position: relative;
   padding-top: 50rem;
   padding-bottom: 50rem;
+  display: grid;
 }
 .story__background1 {
-  background: url("../img/storybg-one.jpg");
+  background: url('../img/storybg-one.jpg');
   background-color: var(--color-secondary-1);
   background-size: cover;
   position: absolute;
@@ -244,10 +245,12 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
+  display: grid;
+  place-items: center;
 }
 
 .story__background2 {
-  background: url("../img/storybg-two.jpg");
+  background: url('../img/storybg-two.jpg');
   background-color: var(--color-secondary-2);
   background-size: cover;
   position: absolute;
@@ -267,7 +270,7 @@ video {
 
 .story__background1::after,
 .story__background2::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -290,12 +293,11 @@ video {
 }
 
 .story__info {
-  position: absolute;
-  width: 60rem;
+  width: 60%;
+  min-width: 60rem;
   text-align: center;
   color: var(--color-primary-2);
-  right: 5%;
-  top: 10%;
+
   z-index: 3;
 }
 
@@ -303,7 +305,8 @@ video {
 .story__more-info--next {
   transform: translateX(20rem);
   opacity: 0;
-  transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1.5s ease-in-out,
+    transform 1s ease-in-out;
   transition-delay: 1s;
 }
 
@@ -366,7 +369,8 @@ video {
 
 .story__more-info:hover .fa-arrow-right,
 .story__more-info:hover .fa-arrow-left {
-  animation: inflate 0.6s linear infinite alternate;
+  animation: inflate 0.6s linear infinite
+    alternate;
 }
 
 .story__more-info p {
@@ -384,7 +388,6 @@ video {
 #world {
   position: relative;
   background-color: var(--color-primary-1);
-  width: 100vw;
   padding-top: 40rem;
   padding-bottom: 40rem;
   display: flex;
@@ -398,8 +401,11 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../img/worldbg-one.jpg"), url("../img/worldbg-two.jpg"),
-    url("../img/worldbg-three.jpg"), url("../img/worldbg-four.jpg"), url("../img/worldbg-five.jpg");
+  background-image: url('../img/worldbg-one.jpg'),
+    url('../img/worldbg-two.jpg'),
+    url('../img/worldbg-three.jpg'),
+    url('../img/worldbg-four.jpg'),
+    url('../img/worldbg-five.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   animation: change 35s infinite ease-in-out;
@@ -408,7 +414,7 @@ video {
 }
 
 .world__background::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -440,7 +446,8 @@ video {
   display: inline-block;
   opacity: 0;
   transform: translateY(20rem);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out,
+    transform 1s ease-in-out;
 }
 
 .world__image-animation {
@@ -485,12 +492,12 @@ video {
      CHARACTER SECTION
 =========================*/
 #characters {
-  width: 100vw;
   padding-top: 45rem;
   padding-bottom: 45rem;
   position: relative;
   background-color: var(--color-secondary-1);
-  box-shadow: 0px 0px 500px 20px var(--color-primary-1) inset;
+  box-shadow: 0px 0px 500px 20px
+    var(--color-primary-1) inset;
   z-index: 5;
 }
 
@@ -646,7 +653,8 @@ video {
   font-size: 2.2rem;
   width: 100%;
   bottom: 72px;
-  transform: translate(-50%, -50%) rotate(-90deg) scaleY(1.5);
+  transform: translate(-50%, -50%) rotate(-90deg)
+    scaleY(1.5);
 }
 
 /*=======================
@@ -655,7 +663,6 @@ video {
 #footer {
   padding-top: 10rem;
   padding-bottom: 10rem;
-  width: 100vw;
   background-color: var(--color-primary-1);
   position: relative;
 }
@@ -687,7 +694,8 @@ video {
 }
 
 .footer__main-info .divider {
-  border-left: 1.5px solid var(--color-secondary-2);
+  border-left: 1.5px solid
+    var(--color-secondary-2);
   height: 60%;
 }
 
@@ -777,22 +785,22 @@ video {
   }
 
   20% {
-    background-image: url("../img/worldbg-two.jpg");
+    background-image: url('../img/worldbg-two.jpg');
     background-color: black;
   }
 
   40% {
-    background-image: url("../img/worldbg-three.jpg");
+    background-image: url('../img/worldbg-three.jpg');
     background-color: black;
   }
 
   60% {
-    background-image: url("../img/worldbg-four.jpg");
+    background-image: url('../img/worldbg-four.jpg');
     background-color: black;
   }
 
   80% {
-    background-image: url("../img/worldbg-five.jpg");
+    background-image: url('../img/worldbg-five.jpg');
     background-color: black;
   }
 
@@ -960,8 +968,9 @@ video {
 
   .hamburger__icon,
   .close__icon {
+    -webkit-transform: translateZ(0);
     position: fixed;
-    right: 3rem;
+    right: 8%;
     color: white;
     z-index: 20;
     cursor: pointer;
@@ -970,13 +979,13 @@ video {
 
   .hamburger__icon {
     font-size: 5rem;
-    top: 1rem;
+    top: 6%;
     display: block;
   }
 
   .close__icon {
     font-size: 4rem;
-    top: 8rem;
+    top: 6%;
     display: none;
   }
 
@@ -1013,7 +1022,8 @@ video {
   }
 
   .hero__small-video {
-    box-shadow: 0 0 40px 1px rgba(156, 13, 8, 0.566);
+    box-shadow: 0 0 40px 1px
+      rgba(156, 13, 8, 0.566);
   }
 
   #story {
@@ -1086,11 +1096,12 @@ video {
     background-color: var(--color-secondary-2);
     background-position: 80% 0%;
     z-index: 0;
-    transition: transform 0.3s ease-in-out, z-index 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out,
+      z-index 0.2s ease-in-out;
   }
 
   .world-bg::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -1107,7 +1118,7 @@ video {
   .world__background {
     top: 25%;
     left: 25%;
-    background-image: url("https://artfiles.alphacoders.com/889/88940.jpg");
+    background-image: url('https://artfiles.alphacoders.com/889/88940.jpg');
     background-color: var(--color-secondary-2);
     z-index: 5;
     display: none;
@@ -1116,13 +1127,13 @@ video {
   .world__background--2 {
     top: 0;
     left: 0;
-    background-image: url("https://cdna.artstation.com/p/assets/images/images/000/281/862/large/The_elves_beach.jpg?1414976463");
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/000/281/862/large/The_elves_beach.jpg?1414976463');
   }
 
   .world__background--3 {
     top: 0;
     left: 50%;
-    background-image: url("https://www.lightspeedmagazine.com/wp-content/files_mf/966.jpg");
+    background-image: url('https://www.lightspeedmagazine.com/wp-content/files_mf/966.jpg');
   }
 
   .world__background--4 {
